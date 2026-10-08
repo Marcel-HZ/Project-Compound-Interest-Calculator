@@ -14,7 +14,7 @@ def get_value(name, description, is_rate=False):
     while True:
         raw = input(f"请输入 {name}（{description}），如果未知请输入“未知”：").strip()
 
-        if raw in ("未知", "未知数", "不知道", "unknown", "?", ""):
+        if raw in ("未知", "未知数", "不知道", "unknown", "?", "x", ""):
             return None
 
         if raw.endswith("%"):
